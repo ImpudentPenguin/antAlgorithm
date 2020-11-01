@@ -9,9 +9,7 @@ class GraphWorker {
 
     fun createGraph(numberOfVertices: Int, fromRange: Double, toRange: Double): Boolean {
         val response = service.createGraph(GraphBody(numberOfVertices, fromRange, toRange)).execute()
-        return response.body()?.let {
-            it == "created"
-        } ?: false
+        return response.body() == "created"
     }
 
     fun getGraph(): Graph? {
