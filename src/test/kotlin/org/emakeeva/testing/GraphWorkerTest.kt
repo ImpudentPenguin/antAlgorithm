@@ -74,7 +74,7 @@ class GraphWorkerTest {
         val mockCall = mock(Call::class.java) as Call<Graph>
 
         `when`(mockGraphApiService.getGraph()).thenReturn(mockCall)
-        `when`(mockCall.execute()).thenReturn(Response.error(400, ResponseBody.create(MediaType.parse("Graph not found"), "Graph not found")))
+        `when`(mockCall.execute()).thenReturn(Response.error(404, ResponseBody.create(MediaType.parse("Graph not found"), "Graph not found")))
 
         val result = graphWorker.getGraph()
 
