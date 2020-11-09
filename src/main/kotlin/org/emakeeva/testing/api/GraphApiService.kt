@@ -15,7 +15,7 @@ class GraphApiService {
 
         val retrofit = Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create(gson))
-                .baseUrl("http://localhost:8080")
+                .baseUrl("https://antbackend.herokuapp.com")
                 .build()
 
         service = retrofit.create<IGraphApiService>(

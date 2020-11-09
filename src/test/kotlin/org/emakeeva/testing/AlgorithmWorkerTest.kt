@@ -1,6 +1,5 @@
 package org.emakeeva.testing
 
-import com.nhaarman.mockitokotlin2.description
 import com.sun.org.glassfish.gmbal.Description
 import org.emakeeva.testing.api.Graph
 import org.emakeeva.testing.utils.*
