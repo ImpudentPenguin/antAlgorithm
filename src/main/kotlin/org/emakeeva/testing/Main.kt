@@ -11,10 +11,10 @@ fun main(args: Array<String>) {
     val worker = GraphWorker()
     val algorithmWorker = AlgorithmWorker()
     val reader = BufferedReader(InputStreamReader(System.`in`))
-    println("Введите количество вершин (от 2 до 10 включительно):")
+    println("Введите количество вершин (от 2 до 15 включительно):")
     var str = reader.readLine()
 
-    while (!str.matches(Regex("^[2-9]|1[0]"))) {
+    while (!str.matches(Regex("^[2-9]|1[0-5]"))) {
         println("Пожалуйста, повторите ввод. Вероятно, вы ввели не число, либо вы ввели число вне диапазона.")
         str = reader.readLine()
     }
