@@ -9,6 +9,12 @@ repositories {
     mavenCentral()
 }
 
+test {
+    testLogging {
+        events("passed", "skipped", "failed")
+    }
+}
+
 jar {
     manifest {
         attributes 'Main-class': 'org.emakeeva.testing.MainKt'
