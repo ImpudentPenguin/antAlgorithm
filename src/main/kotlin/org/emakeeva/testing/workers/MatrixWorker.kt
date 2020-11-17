@@ -10,7 +10,7 @@ class MatrixWorker {
 
     private fun validateMatrix(size: Int, value: Double) {
         when {
-            size !in 2..10 -> throw MatrixInitException("Matrix initialization error")
+            size !in 2..15 -> throw MatrixInitException("Matrix initialization error")
             value < 0.0 -> throw MatrixInitException("Matrix initialization with negative value is not possible")
         }
     }
