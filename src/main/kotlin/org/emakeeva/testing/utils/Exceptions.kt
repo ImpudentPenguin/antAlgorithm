@@ -10,3 +10,5 @@ class MatrixZerosDistanceException : Exception("Adjacency matrix consists of zer
 class GraphNegativeDistanceException : Exception("Graph edges contain negative distance") // содержит отрицательные значения
 class MatrixIsNotSymmetricException : Exception("Matrix is not symmetric") // матрица не симметрична
 class GraphIncorrectDimensionException : Exception("Adjacency matrix is not square") // матрица не квадратная
+class GraphIncorrectDistanceException : Exception("Distance: going beyond boundaries") // общая ошибка по некорретной дистанции
+class GraphLimitVerticesException : Exception("Limit vertices of the graph") // ограничение по вершинам
